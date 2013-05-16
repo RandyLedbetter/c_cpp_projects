@@ -17,7 +17,7 @@ class AdjListNode
                 m_id = id;
                 m_dest = dest;
                 m_weight = weight;
-                m_parent = NULL;
+                m_parent = "NIL";
                 m_next = NULL;
             }
 
@@ -28,13 +28,13 @@ class AdjListNode
                 m_src = src;
                 m_dest = dest;
                 m_weight = weight;
-                m_parent = NULL;
+                m_parent = "NIL";
                 m_next = NULL;
             }
 
             ~AdjListNode()
             {
-                delete m_parent;
+                //delete m_parent;
                 delete m_next;
             }
 
@@ -43,7 +43,7 @@ class AdjListNode
             int m_src;
             int m_dest;
             int m_weight;
-            AdjListNode* m_parent;
+            string m_parent;
             AdjListNode* m_next;
         };
 
@@ -82,20 +82,21 @@ class Graph
         int weight, i, j;
         m_size = 0;
 
-    // Figure out how to fill vector with line
-        for(i = 0;  ; i++)
+
+    getline(cin, line);
+    istringstream iss(line);
+
+    while(iss)
+    {
+        string v;
+        while(iss >> v)
         {
-
-            vertices.push_back(x);
+            vertices.push_back(v);
+            //cout << "vertices[" << m_size << "] = " << vertices[m_size] << endl;
             m_size++;
-            cout << vertices[i] << " ";
-            
         }
-        
-
-        //getchar(); // Get newline character
-
-        
+    } 
+       
 
         m_array = new AdjList[m_size];
         
@@ -119,17 +120,20 @@ class Graph
             while(id == vertices[i])
             {
                 for(j = 0; vertices[j] != dest; j++);
+                AdjListNode* ptr2 = m_array[j].m_head;
 
+                AdjListNode* newNode = new AdjListNode(id, i, j, dest, weight);
+                AdjListNode* newNode2 = new AdjListNode(dest, j, i, id, weight);
+                
+                // Insert edge from src to dest
                 if(ptr == NULL)
                 {
-                    AdjListNode* newNode = new AdjListNode(id, i, j, dest, weight);
                     m_array[i].m_head = newNode;
                 }
                 else if(ptr->m_d_id > dest)
                 {
-                    AdjListNode* newNode = new AdjListNode(id, i, j, dest, weight);
                     newNode->m_next = m_array[i].m_head;
-                    newNode->m_next->m_parent = newNode;
+                    //newNode->m_next->m_parent = newNode;
                     m_array[i].m_head = newNode;
                 }
                 else
@@ -139,20 +143,75 @@ class Graph
                         ptr = ptr->m_next;
                     }
 
-                    AdjListNode* newNode = new AdjListNode(id, i, j, dest, weight);
-                    newNode->m_parent = ptr;
+                    //newNode->m_parent = ptr;
                     newNode->m_next = ptr->m_next;
                     
                     if(ptr->m_next)
                     {
-                        ptr->m_next->m_parent = newNode;
+                        //ptr->m_next->m_parent = newNode;
                     }
 
                     ptr->m_next = newNode;
 
                 }
 
+               
+
+                // Insert edge from dest to src
+                if(ptr2 == NULL)
+                {
+                    m_array[j].m_head = newNode2;
+
+                }
+                else if(ptr2->m_d_id > dest)
+                {
+                    newNode2->m_next = m_array[j].m_head;
+                    //newNode2->m_next->m_parent = newNode2;
+
+                    
+                    m_array[j].m_head = newNode2;
+                }
+                else
+                {
+                    while(ptr2->m_next && ptr2->m_next->m_d_id <= dest)
+                    {
+                        ptr2 = ptr2->m_next;
+                    }
+
+                    //newNode2->m_parent = ptr2;
+                    
+                    newNode2->m_next = ptr2->m_next;
+                    
+                    if(ptr2->m_next)
+                    {
+                        //ptr2->m_next->m_parent = newNode2;
+                        
+                    }
+
+                    ptr2->m_next = newNode2;
+
+                }
+
+
+               /* //Print properties of newNode as debugging tool
+                cout << "id = " << newNode->m_id << endl;
+                cout << "d_id = " << newNode->m_d_id << endl;
+                cout << "src = " << newNode->m_src << endl;
+                cout << "dest = " << newNode->m_dest << endl;
+                cout << "parent = " << newNode->m_parent << endl;
+                cout << "weight = " << newNode->m_weight << endl << endl << endl;
+
+                //Print properties of newNode2 as debugging tool
+                cout << "id = " << newNode2->m_id << endl;
+                cout << "d_id = " << newNode2->m_d_id << endl;
+                cout << "src = " << newNode2->m_src << endl;
+                cout << "dest = " << newNode2->m_dest << endl;
+                cout << "parent = " << newNode2->m_parent << endl;
+                cout << "weight = " << newNode2->m_weight << endl << endl << endl;
+                */
+
                 ptr = m_array[i].m_head;
+                ptr2 = m_array[j].m_head;
 
                 if(cin >> id)
                 {
@@ -376,6 +435,7 @@ void printArray(int array[], int n)
     for(int i = 1; i < n; ++i)
     {
         cout << array[i] << " - " << i << endl;
+
     }
 }
 
@@ -387,7 +447,8 @@ void PrimMST(Graph* graph)
     int V = graph->m_size;// Get the number of vertices in graph
     int* parent = new int[V];   // Array to store constructed MST
     int* key = new int[V];      // Key values used to pick minimum weight edge in cut
- 
+    int total_weight = 0; // Used to sum individual weights.
+
     // minHeap represents set E
     MinPriority* minHeap = new MinPriority(V);
  
@@ -417,12 +478,19 @@ void PrimMST(Graph* graph)
         // Extract the vertex with minimum key value
         MinPriorityNode* minHeapNode = minHeap->heapExtractMin(minHeap);
         int u = minHeapNode->m_value; // Store the extracted vertex number
+       
+
+
 
 
  
         // Traverse through all adjacent vertices of u (the extracted
         // vertex) and update their key values
         AdjListNode* pCrawl = graph->m_array[u].m_head;
+
+       
+
+
         while (pCrawl != NULL)
         {
             
@@ -434,51 +502,35 @@ void PrimMST(Graph* graph)
             if (minHeap->isInMinPriority(minHeap, v) && pCrawl->m_weight < key[v])
             {
                 key[v] = pCrawl->m_weight;
+                graph->m_array[v].m_head->m_parent = graph->m_array[u].m_head->m_id;
                 parent[v] = u;
                 minHeap->heapDecreaseKey(minHeap, v, key[v]);
             }
             pCrawl = pCrawl->m_next;
+
+
         }
+
+        cout << graph->m_array[u].m_head->m_id << " " 
+             << graph->m_array[u].m_head->m_parent << " " 
+             << minHeapNode->m_key << endl;
+             
+
+        total_weight += minHeapNode->m_key;
+ 
+        
+
     }
+
+    cout << total_weight << endl;
  
     // print edges of MST
-    printArray(parent, V);
+    //printArray(parent, V);
 
-    delete [] parent;
-    delete [] key;
+
 }
 
 
-
-/*
-// Driver program to test above functions
-int main()
-{
-    // Let us create the graph given in above fugure
-    int V = 9;
-    string id = "vertex_name";
-
-    Graph* graph = new Graph(V);
-    addEdge(graph, 0, 1, 4, id);
-    addEdge(graph, 0, 7, 8, id);
-    addEdge(graph, 1, 2, 8, id);
-    addEdge(graph, 1, 7, 11, id);
-    addEdge(graph, 2, 3, 7, id);
-    addEdge(graph, 2, 8, 2, id);
-    addEdge(graph, 2, 5, 4, id);
-    addEdge(graph, 3, 4, 9, id);
-    addEdge(graph, 3, 5, 14, id);
-    addEdge(graph, 4, 5, 10, id);
-    addEdge(graph, 5, 6, 2, id);
-    addEdge(graph, 6, 7, 1, id);
-    addEdge(graph, 6, 8, 6, id);
-    addEdge(graph, 7, 8, 7, id);
- 
-    PrimMST(graph);
- 
-    return 0;
-}
-*/
 // Driver program to test above functions
 int main()
 {
@@ -489,6 +541,7 @@ int main()
 
  
     PrimMST(graph);
+
  
     return 0;
 }
