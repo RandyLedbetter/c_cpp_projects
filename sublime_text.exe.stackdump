@@ -1,0 +1,11 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=610DBFAB
+eax=00000001 ebx=00000000 ecx=00000000 edx=02C9ABB0 esi=00000234 edi=02C9AC44
+ebp=02C9AB7C esp=02C9AA64 program=\\?\C:\program files\sublime text 2\sublime_text.exe, pid 3484, thread unknown (0xBB8)
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+02C9AB7C  610DBFAB  (00000000, 00000000, 00000000, 00000000)
+02C9AC4C  610DCD67  (FFFFFFFF, FFFFFFFF, 00000000, 00000000)
+02C9ACAC  6102F16F  (00000002, 943D278A, 02C9CDB8, 76786CDC)
+02C9AD38  76786E91  (00000002, 02C9CDB8, 76786CDC, 00000000)
+      1 [unknown (0xBB8)] sh 3484! exception::handle: Error while dumping state (probably corrupted stack)
