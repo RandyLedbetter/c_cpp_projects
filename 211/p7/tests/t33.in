@@ -1,0 +1,9 @@
+insert Chico Sacramento 90
+insert Chico Redding 73
+insert Sacramento San_Francisco 87
+insert Sacramento Los_Angeles 384
+remove San_Francisco
+remove Los_Angeles
+remove Sacramento
+lookup Chico
+remove Chico

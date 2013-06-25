@@ -1,0 +1,1 @@
+-1 tests/t08.in results/t08.myout

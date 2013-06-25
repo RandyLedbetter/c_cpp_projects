@@ -1,0 +1,5 @@
+insert Chico Sacramento 90
+insert Chico Redding 60
+lookup Chico
+lookup Sacramento
+lookup Redding

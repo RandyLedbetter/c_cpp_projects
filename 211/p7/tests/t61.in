@@ -1,0 +1,9 @@
+insert Pasadena Poughkeepsie 2805
+insert Pasadena San_Diego 129
+insert Poughkeepsie Memphis 1155
+insert Poughkeepsie Tucson 2498
+insert Tucson Albuquerque 450
+insert Tucson Edmonton 1755
+insert Albuquerque Chico 1170
+distance Pasadena Miami
+distance Pasadena Chico

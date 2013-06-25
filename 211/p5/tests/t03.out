@@ -1,0 +1,22 @@
+1: Homer entered store
+2: Marge entered store
+3: Bart entered store
+4: Maggie entered store
+5: Lisa entered store
+6: Homer done shopping
+6: Marge done shopping
+6: Bart done shopping
+6: Maggie done shopping
+6: Lisa done shopping
+6: Homer started checkout with checker 0
+6: Marge started checkout with checker 1
+14: Marge paid $12 for 4 items to checker 1
+14: Bart started checkout with checker 1
+16: Homer paid $15 for 5 items to checker 0
+16: Maggie started checkout with checker 0
+20: Maggie paid $6 for 2 items to checker 0
+20: Bart paid $9 for 3 items to checker 1
+20: Lisa started checkout with checker 0
+22: Lisa stole $121 and 1 item from checker 0
+registers[0] = $0
+registers[1] = $121

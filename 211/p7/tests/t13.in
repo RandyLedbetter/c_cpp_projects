@@ -1,0 +1,409 @@
+insert Abilene Akron 1
+insert Akron Albuquerque 2
+insert Akron Alexandria 2
+insert Albuquerque Allentown 3
+insert Albuquerque Amarillo 3
+insert Alexandria Anaheim 4
+insert Alexandria Anchorage 4
+insert Allentown Ann_Arbor 5
+insert Allentown Antioch 5
+insert Amarillo Arlington 6
+insert Amarillo Arvada 6
+insert Anaheim Athens 7
+insert Anaheim Atlanta 7
+insert Anchorage Augusta 8
+insert Anchorage Aurora 8
+insert Ann_Arbor Austin 9
+insert Ann_Arbor Bakersfield 9
+insert Antioch Baltimore 10
+insert Antioch Baton_Rouge 10
+insert Arlington Beaumont 11
+insert Arlington Bellevue 11
+insert Arvada Berkeley 12
+insert Arvada Billings 12
+insert Athens Birmingham 13
+insert Athens Boise 13
+insert Atlanta Boston 14
+insert Atlanta Bridgeport 14
+insert Augusta Broken_Arrow 15
+insert Augusta Brownsville 15
+insert Aurora Buffalo 16
+insert Aurora Burbank 16
+insert Austin Cambridge 17
+insert Austin Cape_Coral 17
+insert Bakersfield Carlsbad 18
+insert Bakersfield Carrollton 18
+insert Baltimore Cary 19
+insert Baltimore Cedar_Rapids 19
+insert Baton_Rouge Centennial 20
+insert Baton_Rouge Chandler 20
+insert Beaumont Charleston 21
+insert Beaumont Charlotte 21
+insert Bellevue Chattanooga 22
+insert Bellevue Chesapeake 22
+insert Berkeley Chicago 23
+insert Berkeley Chico 23
+insert Billings Chula_Vista 24
+insert Billings Cincinnati 24
+insert Birmingham Clarksville 25
+insert Birmingham Clearwater 25
+insert Boise Cleveland 26
+insert Boise Colorado_Springs 26
+insert Boston Columbia 27
+insert Boston Columbus 27
+insert Bridgeport Concord 28
+insert Bridgeport Coral_Springs 28
+insert Broken_Arrow Corona 29
+insert Broken_Arrow Corpus_Christi 29
+insert Brownsville Costa_Mesa 30
+insert Brownsville Dallas 30
+insert Buffalo Daly_City 31
+insert Buffalo Davenport 31
+insert Burbank Dayton 32
+insert Burbank Denton 32
+insert Cambridge Denver 33
+insert Cambridge Des_Moines 33
+insert Cape_Coral Detroit 34
+insert Cape_Coral Downey 34
+insert Carlsbad Durham 35
+insert Carlsbad El_Cajon 35
+insert Carrollton Elgin 36
+insert Carrollton Elizabeth 36
+insert Cary Elk_Grove 37
+insert Cary El_Monte 37
+insert Cedar_Rapids El_Paso 38
+insert Cedar_Rapids Erie 38
+insert Centennial Escondido 39
+insert Centennial Eugene 39
+insert Chandler Evansville 40
+insert Chandler Everett 40
+insert Charleston Fairfield 41
+insert Charleston Fargo 41
+insert Charlotte Fayetteville 42
+insert Charlotte Flint 42
+insert Chattanooga Fontana 43
+insert Chattanooga Fort_Collins 43
+insert Chesapeake Fort_Lauderdale 44
+insert Chesapeake Fort_Wayne 44
+insert Chicago Fort_Worth 45
+insert Chicago Fremont 45
+insert Chico Fresno 46
+insert Chico Frisco 46
+insert Chula_Vista Fullerton 47
+insert Chula_Vista Gainesville 47
+insert Cincinnati Garden_Grove 48
+insert Cincinnati Garland 48
+insert Clarksville Gilbert 49
+insert Clarksville Glendale 49
+insert Clearwater Grand_Prairie 50
+insert Clearwater Grand_Rapids 50
+insert Cleveland Green_Bay 51
+insert Cleveland Greensboro 51
+insert Colorado_Springs Gresham 52
+insert Colorado_Springs Hampton 52
+insert Columbia Hartford 53
+insert Columbia Hayward 53
+insert Columbus Henderson 54
+insert Columbus Hialeah 54
+insert Concord High_Point 55
+insert Concord Hollywood 55
+insert Coral_Springs Honolulu 56
+insert Coral_Springs Houston 56
+insert Corona Huntington_Beach 57
+insert Corona Huntsville 57
+insert Corpus_Christi Independence 58
+insert Corpus_Christi Indianapolis 58
+insert Costa_Mesa Inglewood 59
+insert Costa_Mesa Irvine 59
+insert Dallas Irving 60
+insert Dallas Jackson 60
+insert Daly_City Jacksonville 61
+insert Daly_City Jersey_City 61
+insert Davenport Joliet 62
+insert Davenport Kansas_City 62
+insert Dayton Kent 63
+insert Dayton Killeen 63
+insert Denton Knoxville 64
+insert Denton Lafayette 64
+insert Denver Lakewood 65
+insert Denver Lancaster 65
+insert Des_Moines Lansing 66
+insert Des_Moines Laredo 66
+insert Detroit Las_Vegas 67
+insert Detroit Lexington 67
+insert Downey Lincoln 68
+insert Downey Little_Rock 68
+insert Durham Long_Beach 69
+insert Durham Los_Angeles 69
+insert El_Cajon Louisville 70
+insert El_Cajon Lowell 70
+insert Elgin Lubbock 71
+insert Elgin Madison 71
+insert Elizabeth Manchester 72
+insert Elizabeth McAllen 72
+insert Elk_Grove McKinney 73
+insert Elk_Grove Memphis 73
+insert El_Monte Mesa 74
+insert El_Monte Mesquite 74
+insert El_Paso Miami 75
+insert El_Paso Miami_Gardens 75
+insert Erie Midland 76
+insert Erie Milwaukee 76
+insert Escondido Minneapolis 77
+insert Escondido Miramar 77
+insert Eugene Mobile 78
+insert Eugene Modesto 78
+insert Evansville Montgomery 79
+insert Evansville Moreno_Valley 79
+insert Everett Murfreesboro 80
+insert Everett Murrieta 80
+insert Fairfield Naperville 81
+insert Fairfield Nashville 81
+insert Fargo Newark 82
+insert Fargo New_Haven 82
+insert Fayetteville New_Orleans 83
+insert Fayetteville Newport_News 83
+insert Flint New_York 84
+insert Flint Norfolk 84
+insert Fontana Norman 85
+insert Fontana North_Las_Vegas 85
+insert Fort_Collins Norwalk 86
+insert Fort_Collins Oakland 86
+insert Fort_Lauderdale Oceanside 87
+insert Fort_Lauderdale Odessa 87
+insert Fort_Wayne Oklahoma_City 88
+insert Fort_Wayne Olathe 88
+insert Fort_Worth Omaha 89
+insert Fort_Worth Ontario 89
+insert Fremont Orange 90
+insert Fremont Orlando 90
+insert Fresno Overland_Park 91
+insert Fresno Oxnard 91
+insert Frisco Palm_Bay 92
+insert Frisco Palmdale 92
+insert Fullerton Pasadena 93
+insert Fullerton Paterson 93
+insert Gainesville Pembroke_Pines 94
+insert Gainesville Peoria 94
+insert Garden_Grove Philadelphia 95
+insert Garden_Grove Phoenix 95
+insert Garland Pittsburgh 96
+insert Garland Plano 96
+insert Gilbert Pomona 97
+insert Gilbert Pompano_Beach 97
+insert Glendale Portland 98
+insert Glendale Port_Saint_Lucie 98
+insert Grand_Prairie Providence 99
+insert Grand_Prairie Provo 99
+insert Grand_Rapids Pueblo 100
+insert Grand_Rapids Raleigh 100
+insert Green_Bay Rancho_Cucamonga 101
+insert Green_Bay Reno 101
+insert Greensboro Rialto 102
+insert Greensboro Richardson 102
+insert Gresham Richmond 103
+insert Gresham Riverside 103
+insert Hampton Rochester 104
+insert Hampton Rockford 104
+insert Hartford Roseville 105
+insert Hartford Round_Rock 105
+insert Hayward Sacramento 106
+insert Hayward Saint_Louis 106
+insert Henderson Saint_Paul 107
+insert Henderson Saint_Petersburg 107
+insert Hialeah Salem 108
+insert Hialeah Salinas 108
+insert High_Point Salt_Lake_City 109
+insert High_Point San_Antonio 109
+insert Hollywood San_Bernardino 110
+insert Hollywood San_Buenaventura_Ventura 110
+insert Honolulu San_Diego 111
+insert Honolulu San_Francisco 111
+insert Houston San_Jose 112
+insert Houston Santa_Ana 112
+insert Huntington_Beach Santa_Clara 113
+insert Huntington_Beach Santa_Clarita 113
+insert Huntsville Santa_Maria 114
+insert Huntsville Santa_Rosa 114
+insert Independence Savannah 115
+insert Independence Scottsdale 115
+insert Indianapolis Seattle 116
+insert Indianapolis Shreveport 116
+insert Inglewood Simi_Valley 117
+insert Inglewood Sioux_Falls 117
+insert Irvine South_Bend 118
+insert Irvine Spokane 118
+insert Irving Springfield 119
+insert Irving Stamford 119
+insert Jackson Sterling_Heights 120
+insert Jackson Stockton 120
+insert Jacksonville Sunnyvale 121
+insert Jacksonville Surprise 121
+insert Jersey_City Syracuse 122
+insert Jersey_City Tacoma 122
+insert Joliet Tallahassee 123
+insert Joliet Tampa 123
+insert Kansas_City Temecula 124
+insert Kansas_City Tempe 124
+insert Kent Thornton 125
+insert Kent Thousand_Oaks 125
+insert Killeen Toledo 126
+insert Killeen Topeka 126
+insert Knoxville Torrance 127
+insert Knoxville Tucson 127
+insert Lafayette Tulsa 128
+insert Lafayette Vallejo 128
+insert Lakewood Vancouver 129
+insert Lakewood Victorville 129
+insert Lancaster Virginia_Beach 130
+insert Lancaster Visalia 130
+insert Lansing Waco 131
+insert Lansing Warren 131
+insert Laredo Washington 132
+insert Laredo Waterbury 132
+insert Las_Vegas West_Covina 133
+insert Las_Vegas West_Jordan 133
+insert Lexington Westminster 134
+insert Lexington West_Palm_Beach 134
+insert Lincoln West_Valley_City 135
+insert Lincoln Wichita 135
+insert Little_Rock Wichita_Falls 136
+insert Little_Rock Wilmington 136
+insert Long_Beach Winston_Salem 137
+insert Long_Beach Worcester 137
+distance Abilene Akron
+distance Abilene Albuquerque
+distance Abilene Alexandria
+distance Abilene Allentown
+distance Abilene Amarillo
+distance Abilene Anaheim
+distance Abilene Anchorage
+distance Abilene Ann_Arbor
+distance Abilene Antioch
+distance Abilene Arlington
+distance Abilene Arvada
+distance Abilene Athens
+distance Abilene Atlanta
+distance Abilene Augusta
+distance Abilene Aurora
+distance Abilene Austin
+distance Abilene Bakersfield
+distance Abilene Baltimore
+distance Abilene Baton_Rouge
+distance Abilene Beaumont
+distance Abilene Bellevue
+distance Abilene Berkeley
+distance Abilene Billings
+distance Abilene Birmingham
+distance Abilene Boise
+distance Abilene Boston
+distance Abilene Bridgeport
+distance Abilene Broken_Arrow
+distance Abilene Brownsville
+distance Abilene Buffalo
+distance Abilene Burbank
+distance Abilene Cambridge
+distance Abilene Cape_Coral
+distance Abilene Carlsbad
+distance Abilene Carrollton
+distance Abilene Cary
+distance Abilene Cedar_Rapids
+distance Abilene Centennial
+distance Abilene Chandler
+distance Abilene Charleston
+distance Abilene Charlotte
+distance Abilene Chattanooga
+distance Abilene Chesapeake
+distance Abilene Chicago
+distance Abilene Chico
+distance Abilene Chula_Vista
+distance Abilene Cincinnati
+distance Abilene Clarksville
+distance Abilene Clearwater
+distance Abilene Cleveland
+distance Abilene Colorado_Springs
+distance Abilene Columbia
+distance Abilene Columbus
+distance Abilene Concord
+distance Abilene Coral_Springs
+distance Abilene Corona
+distance Abilene Corpus_Christi
+distance Abilene Costa_Mesa
+distance Abilene Dallas
+distance Abilene Daly_City
+distance Abilene Davenport
+distance Abilene Dayton
+distance Abilene Denton
+distance Abilene Denver
+distance Abilene Des_Moines
+distance Abilene Detroit
+distance Abilene Downey
+distance Abilene Durham
+distance Abilene El_Cajon
+distance Abilene Elgin
+distance Abilene Elizabeth
+distance Abilene Elk_Grove
+distance Abilene El_Monte
+distance Abilene El_Paso
+distance Abilene Erie
+distance Abilene Escondido
+distance Abilene Eugene
+distance Abilene Evansville
+distance Abilene Everett
+distance Abilene Fairfield
+distance Abilene Fargo
+distance Abilene Fayetteville
+distance Abilene Flint
+distance Abilene Fontana
+distance Abilene Fort_Collins
+distance Abilene Fort_Lauderdale
+distance Abilene Fort_Wayne
+distance Abilene Fort_Worth
+distance Abilene Fremont
+distance Abilene Fresno
+distance Abilene Frisco
+distance Abilene Fullerton
+distance Abilene Gainesville
+distance Abilene Garden_Grove
+distance Abilene Garland
+distance Abilene Gilbert
+distance Abilene Glendale
+distance Abilene Grand_Prairie
+distance Abilene Grand_Rapids
+distance Abilene Green_Bay
+distance Abilene Greensboro
+distance Abilene Gresham
+distance Abilene Hampton
+distance Abilene Hartford
+distance Abilene Hayward
+distance Abilene Henderson
+distance Abilene Hialeah
+distance Abilene High_Point
+distance Abilene Hollywood
+distance Abilene Honolulu
+distance Abilene Houston
+distance Abilene Huntington_Beach
+distance Abilene Huntsville
+distance Abilene Independence
+distance Abilene Indianapolis
+distance Abilene Inglewood
+distance Abilene Irvine
+distance Abilene Irving
+distance Abilene Jackson
+distance Abilene Jacksonville
+distance Abilene Jersey_City
+distance Abilene Joliet
+distance Abilene Kansas_City
+distance Abilene Kent
+distance Abilene Killeen
+distance Abilene Knoxville
+distance Abilene Lafayette
+distance Abilene Lakewood
+distance Abilene Lancaster
+distance Abilene Lansing
+distance Abilene Laredo
+distance Abilene Las_Vegas
+distance Abilene Lexington
+distance Abilene Lincoln
+distance Abilene Little_Rock
+distance Abilene Long_Beach

@@ -1,0 +1,4 @@
+this_is_a_bad_command these are bad arguments
+insert does_your_program_keep_working or_does_it_stop 1
+insert does_your_program_keep_working it_should_keep_working_after_a_bad_command 2
+lookup does_your_program_keep_working

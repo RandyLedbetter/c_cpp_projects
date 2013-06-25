@@ -1,0 +1,7 @@
+insert Chico Sacramento 90
+insert Chico Redding 73
+lookup Chico
+remove Sacramento
+lookup Chico
+remove Redding
+lookup Chico
